@@ -3,7 +3,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/bglogin"
     android:orientation="vertical" >
 
     <EditText
@@ -12,12 +12,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
         android:ems="10"
         android:hint="@string/username"
-        android:inputType="text" >
-        <requestFocus />
-    </EditText>
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editText2"
@@ -26,7 +25,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/editText1"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="49dp"
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword" />
@@ -37,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="70dp"
         android:text="@string/Submit" />
 
 </RelativeLayout>

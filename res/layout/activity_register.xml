@@ -6,26 +6,6 @@
     android:background="@drawable/bg"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/Submit" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="18dp"
-        android:ems="10"
-        android:hint="@string/Password"
-        android:inputType="textPassword" />
-
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -50,20 +30,33 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/editText2"
         android:ems="10"
-        android:hint="@string/username" />
+        android:hint="@string/username" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText3"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText4"
         android:ems="10"
         android:hint="@string/year"
         android:inputType="number" />
@@ -73,9 +66,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText1"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/Submit" />
     
 </RelativeLayout>

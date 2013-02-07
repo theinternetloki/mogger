@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
+    <issue id="SdCardPath">
+        <ignore path="src\com\kimistudios\mogger\Upload.java" />
+    </issue>
     <issue id="SetJavaScriptEnabled">
         <ignore path="src\com\kimistudios\mogger\Profile.java" />
     </issue>

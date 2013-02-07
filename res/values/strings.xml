@@ -14,5 +14,12 @@
     <string name="email">E-Mail</string>
     <string name="year">Birth Year</string>
     <string name="nothing"> </string>
+    <string name="Textview">TextView</string>
+    <string name="edit">Edit</string>
+    <string name="upload">Upload Profile Pic</string>
+    <string name="Friends">Friends</string>
+    <string name="wgn">What\'s going on?</string>
+    <string name="post">Post</string>
+    <string name="bio">Bio:</string>
 
 </resources>

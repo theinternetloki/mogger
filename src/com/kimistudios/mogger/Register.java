@@ -10,6 +10,7 @@ import java.net.URL;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -52,7 +53,7 @@ public class Register extends Activity {
 
                                     }
                                 });                      
-                         int response= RegisterFile("/sdcard/android_1.png");
+                         int response= RegisterFile(Environment.getExternalStorageDirectory().getPath());
                          System.out.println("RES : " + response);                         
                         }
                       }).start();        
